@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function Register(props) {
+function Register() {
     let navigate = useNavigate();
     const[email,setEmail] = useState('');
     const[pwd,setPwd] = useState('');
@@ -18,7 +18,8 @@ function Register(props) {
         };
         axios.post('https://ttmg-backend.herokuapp.com/api/auth/staffRegister',items)
         .then(response =>{
-            console.log(response)
+            window.alert("Registration Successful")
+            navigate("/");
         })
         .catch(error=>{
             window.alert(error)
