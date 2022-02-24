@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+*{
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Login form */ 
+.login_form{
+  display:grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+  font-size: 2rem;
+  overflow: hidden;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color:aqua;
+}
+button{
+  font-size: 1.5rem;
+  font-weight: 100;
+  color:aqua;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.toggle-login-regis{
+  font-size: 1.5rem;
+  font-weight: 100;
+  color:aqua;
+  max-width: 65px;
 }
 
-.App-link {
-  color: #61dafb;
+.toggle-login-regis:hover{
+  font-size: 26px;
+  cursor:pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  position:relative;
+  height:2.2rem;
+  width:100%;
+  color:white;
+  font-size: 1.2rem;
+}
+input[type=submit]{
+  background-color: black;
+  font-size: 1.5rem;
+}
+
+input[type=submit]:hover{
+  cursor:pointer;
+  background-color:#13b6ec;
+  border-color: white;
+}
+
+.registration{
+  position: relative;
+  display:grid;
+  place-items: center;
+  grid-template-rows:1fr auto;
+  padding-left:30%;
+  padding-right:30%;
+  font-size: 1.5rem;
+  overflow: hidden;
+  color:white;
 }
